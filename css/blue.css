@@ -1,0 +1,163 @@
+
+@font-face {
+    font-family: 'Neris';
+    src: url('Neris-Light/Neris-Light.woff2') format('woff2'),
+         url('Neris-Light/Neris-Light.woff') format('woff'),
+         url('Neris-Light/Neris-Light.ttf') format('truetype');
+}
+
+body {
+    font-family: 'Neris', sans-serif;
+    background-color: #ffffff;
+    color: #161851;
+}
+
+main {
+    max-width: 800px; 
+    margin: auto;
+}
+
+
+header {
+    background-color: #161851;
+    height: 15px;
+    background-color: #161851;
+
+}
+    
+.liens-internes {
+    max-width: 1000px;
+    margin: 0 auto 0 auto;
+    background-color: #ffffff;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 100px;
+    display: block;
+}
+
+ul {
+    display: flex;
+    gap: 20px; 
+    list-style: none;
+    margin-left: 105px;
+}
+
+a {
+    display: block;
+    padding: 10px 30px;
+    background-color: #cb4e4e;
+    color: white;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: #742c2c;
+}
+
+.fondu {
+    background-image: url('../png/bg.png');
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    margin-bottom: 30px;
+}
+
+
+h1 {
+
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2em;
+    color: #080b47;
+}
+
+h3 {
+    color: #080b47;
+    font-size: 1.5em;
+    margin: 20px 0 5px 0;
+}
+
+
+
+section {
+    background-color: #ffffff;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 1px 10px rgba(126, 126, 192, 0.05);
+}
+
+iframe {
+    display: block;
+    margin: 20px auto 0 auto;
+}
+
+.regle {
+    display: flex;
+    gap: 30px;
+}
+
+.image-regle img {
+    width: 100%;
+    border-radius: 5px;
+    display: block;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #161851;
+    color: white;
+}
+
+#JOchampion, #france {
+    display: none;
+}
+#JOchampion:target, #france:target {
+    display: block;
+}
+
+td img {
+    max-height: 30px;
+    border-radius: 3px;
+}
+
+td img.photo-athlete {
+    max-height: 60px;
+}
+
+#aucentre {
+    max-width: 700px;
+    margin: auto;
+}
+.barre-cote {
+    border-left: 4px solid #121d4d;
+    padding-left: 30px;
+}
+
+
+footer {
+    padding: 15px;
+    background-color: #161851;
+    color: white;
+    margin-top: 40px;
+}

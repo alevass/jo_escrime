@@ -1,0 +1,176 @@
+<!DOCTYPE html> 
+<header> </header>
+
+
+<head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+
+    <title>L'Escrime - Inscription</title>
+    <link rel="stylesheet" href="css/blue.css">
+        <div class="liens-internes">
+        <div class="logo">
+            <img src="png/logo.png" alt="Logo Escrime">
+        </div>
+            <ul>
+                <li><a href="index.html" class="text-white">ACCUEIL</a></li>
+                <li><a href="regles.html" class="text-white">RÈGLES</a></li>
+                <li><a href="palmares.html" class="text-white">PALMARÈS</a></li>
+                <li><a href="formulaire.html" class="text-white" >INSCRIPTION</a></li>
+            </ul>
+    </div>
+        <div class="fondu"></div>
+    
+</head>
+
+<body>
+ <h3 class=" text-center"> Envie de rejoindre l'équipe ?</h3>
+<p class=" text-center">Remplissez le formulaire ci-dessous afin de soumettre votre candidature !</p>
+
+
+<form class="w-50 mx-auto border border-5 p-5" id="Formulaire">
+
+    <label class="form-label fs-5">Nom</label>
+    <input type="text" id="Nom" class="form-control w-50">
+    <div class="d-none text-danger" id="erreurN">Ce champ est invalide !</div>
+    <div class="d-none text-success" id="valideN">Ce champ est valide !</div>
+    <div class="form-text fst-italic"> Champ obligatoire * </div>
+
+    <label class="form-label fs-5 mt-4">Prénom</label>
+    <input type="text" id="Prenom" class="form-control w-50">
+    <div class="d-none text-danger" id="erreurP">Ce champ est invalide !</div>
+    <div class="d-none text-success" id="valideP">Ce champ est valide !</div>
+    <div class="form-text fst-italic"> Champ obligatoire * </div>
+
+<div>
+    <label class="form-label fs-5 mt-4">Civilité</label>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="radio" id="Monsieur">
+        <label class="form-check-label" for="Monsieur">Monsieur</label> </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="radio" id="Madame">
+        <label class="form-check-label" for="Madame">Madame</label></div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="radio" id="Mademoiselle">
+        <label class="form-check-label" for="Mademoiselle">Mademoiselle</label></div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="radio" id="NP">
+        <label class="form-check-label" for="NP">Ne préfère pas renseigner</label>
+    </div>
+
+    <div class="d-none text-danger" id="msg_civilite">Veuillez choisir une option !</div>
+    <div class="form-text fst-italic"> Champ obligatoire * </div>
+
+</div>
+
+
+<div>
+    <label class="form-label fs-5 mt-4">Nationalité</label>
+
+    <select class="form-select" id="nationalite">
+        <option value="aucune">Aucune</option>
+        <option value="française">Française</option>
+        <option value="allemande">Allemande</option>
+        <option value="espagnole">Espagnole</option>
+    </select>
+
+    <div class="form-text fst-italic"> Veuillez choisir une nationalité valide * </div>
+
+    <div class="d-none text-danger" id="msgf_nationalite">Option invalide</div>
+
+</div>
+
+
+<div>
+    <label class="form-label fs-5 mt-4">Mot de passe</label>
+
+    <input type="text" class="form-control" id="mdp">
+    <div id="obligation" class="form-text fst-italic"> Minimum de 8 caractères dont 1 majuscule, 1 minuscule, 1 chiffre, 1 caractère spécial *
+    </div>
+    <div class="text-danger mt-2 d-none" id="message_mdp"> Mot de passe invalide (veuillez respecter les règles, et qu'il soit identique à la confirmation) !</div>
+        
+    <div class="text-success mt-2 d-none" id="message_mdpV"> Mot de passe valide !</div>
+        
+
+    <label class="form-label fs-5 mt-4">Confirmation du mot de passe</label>
+    <input type="text" class="form-control" id="cmdp">
+    <div class="form-text fst-italic">
+        Ce champ doit être identique au précédent *
+    </div>
+
+</div>
+
+<div>
+         <label class="form-label fs-5 mt-4">Adresse mail</label>
+        <div class="input-group">
+        <input type="text" class="form-control" id="email_nom">
+        <span class="input-group-text">@</span>
+        <input type="text" class="form-control" id="nom_domaine">
+        </div>
+            <div class="text-danger mt-2 d-none" id="message_email">
+            Mail invalide !
+        </div>
+        <div class="text-success mt-2 d-none" id="message_emailV">
+            Mail valide !
+        </div>
+        <div class="form-text fst-italic">
+            Veuillez mettre un nom et un nom de domaine valide *
+        </div>
+        <div class="text-success mt-2 d-none" id="message_domaine">
+            Nom de domaine valide (gmail.com) !
+        </div>
+</div> 
+<div>
+        <label class="form-label fs-5 mt-4 mb-3">  Centre(s) d'intérêt(s)  </label>
+
+
+    <div>
+        <input class="form-check-input" type="checkbox" id="op1">
+        <label class="form-check-label me-3">Escrime</label>
+
+        <input class="form-check-input" type="checkbox" id="op2">
+        <label class="form-check-label me-3">Basketball</label>
+
+        <input class="form-check-input" type="checkbox" id="op3">
+        <label class="form-check-label me-3">Football</label>
+
+        <input class="form-check-input" type="checkbox" id="op4">
+        <label class="form-check-label me-3">Handball</label>
+    </div>
+
+    <div class="mt-2">
+        <input class="form-check-input" type="checkbox" id="op5">
+        <label class="form-check-label me-3">Tennis</label>
+
+        <input class="form-check-input" type="checkbox" id="op6">
+        <label class="form-check-label me-3">Boxe</label>
+
+        <input class="form-check-input" type="checkbox" id="op7">
+        <label class="form-check-label me-3">Course</label>
+
+        <input class="form-check-input" type="checkbox" id="op8">
+        <label class="form-check-label me-3">Gymnastique</label>
+    </div>
+
+    <div class="text-danger mt-2 d-none" id="options_msg"> Moins de 2 options choisies !
+    </div>
+     <input class="btn btn-primary mt-4 float-end" type="submit" value="Soumettre">
+    <div class="form-text fst-italic mt-3 mb-4">Veuillez en choisir au moins 2 *
+    </div>
+</div>
+
+
+</form>
+
+
+<script src="bootstrap_js/jo_javascript.js"></script>
+<link rel="stylesheet" href="bootstrap_js/bootstrap.min.css">
+<script src="bootstrap_js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+<footer>
+    <p class=" text-center">Levasseur Ava - SIO1 - Lycée Jean Mermoz Montpellier</p>
+</footer>
+</html>
